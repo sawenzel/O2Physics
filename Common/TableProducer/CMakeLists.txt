@@ -102,6 +102,11 @@ o2physics_add_dpl_workflow(mccollisionextra
                     PUBLIC_LINK_LIBRARIES O2Physics::AnalysisCore
                     COMPONENT_NAME Analysis)
 
+o2physics_add_dpl_workflow(mc-crossing-weights
+                    SOURCES mcCrossingWeights.cxx
+                    PUBLIC_LINK_LIBRARIES O2Physics::AnalysisCore O2::CCDB O2::DataFormatsParameters O2::DataFormatsFT0
+                    COMPONENT_NAME Analysis)
+
 o2physics_add_dpl_workflow(qvector-table
                     SOURCES qVectorsTable.cxx
                     PUBLIC_LINK_LIBRARIES O2::Framework
